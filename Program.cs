@@ -18,3 +18,21 @@
 // int numB = Convert.ToInt32(Console.ReadLine());
 
 // Console.Write(GetPow(numA, numB));
+
+// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+int SumofTNumbers(int num)
+{
+    int sum = 0;
+    for(int i = 0; num > 0; i++)
+    {
+        sum = sum + num%10;
+        num = num / 10;
+    }
+    return sum;
+}
+
+Console.WriteLine("Введите число для рассчет суммы цифр ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(SumofTNumbers(number));
