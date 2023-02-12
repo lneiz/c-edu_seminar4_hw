@@ -21,18 +21,34 @@
 
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
-int SumofTNumbers(int num)
-{
-    int sum = 0;
-    for(int i = 0; num > 0; i++)
-    {
-        sum = sum + num%10;
-        num = num / 10;
-    }
-    return sum;
-}
+// int SumofTNumbers(int num)
+// {
+//     int sum = 0;
+//     for(int i = 0; num > 0; i++)
+//     {
+//         sum = sum + num%10;
+//         num = num / 10;
+//     }
+//     return sum;
+// }
 
-Console.WriteLine("Введите число для рассчет суммы цифр ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число для рассчет суммы цифр ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(SumofTNumbers(number));
+// Console.WriteLine(SumofTNumbers(number));
+
+//Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+
+// Console.WriteLine("Сколько будет элементов в массиве (m)? ");
+// int m = Convert.ToInt32(Console.ReadLine());
+
+// int[] LineToArray(int m)
+// {
+//     int[] arr = new int[m];
+//     for(int i = 0; i < m; i++)
+//     {
+//         arr[i] = Convert.ToInt32(Console.ReadLine());   
+//     }
+//     return arr;
+// }
+// Console.WriteLine(string.Join(",", LineToArray(m)));
